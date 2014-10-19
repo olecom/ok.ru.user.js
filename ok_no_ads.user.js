@@ -23,6 +23,12 @@ setInterval(function(){
 try {
     id("fthColWrp").style.display = 'none'
     id("hook_Block_HolidaysPortlet").style.display = 'none'
+
+    var i = 0, ads = document.querySelectorAll('a[target=_blank][class=feed-i_spec]')
+
+    if(ads.length) for(var i = 0; i < ads.length; ++i){
+        ads[i].style.display = 'none'
+    }
 } catch(e) { }
 try { id("hook_Block_StickyBannerContainer").style.display = 'none'
 } catch(e) { }
