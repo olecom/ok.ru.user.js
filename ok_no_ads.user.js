@@ -1,11 +1,12 @@
 // ==UserScript==
-// @name            OK ads filter
+// @name            OK без рекламы
 // @author          olecom
 // @namespace       ok
 // @description     ок без рекламы
 // @match           http://www.odnoklassniki.ru/*
 // @match           http://odnoklassniki.ru/*
-// @version         0.1
+// @match           http://ok.ru/*
+// @version         0.2
 // ==/UserScript==
 
 function id(n){
