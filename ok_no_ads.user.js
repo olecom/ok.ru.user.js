@@ -6,7 +6,7 @@
 // @match           http://www.odnoklassniki.ru/*
 // @match           http://odnoklassniki.ru/*
 // @match           http://ok.ru/*
-// @version         0.2
+// @version         0.3
 // ==/UserScript==
 
 function id(n){
@@ -30,11 +30,13 @@ try {
     if(ads.length) for(var i = 0; i < ads.length; ++i){
         ads[i].style.display = 'none'
     }
+    id("bannerWithTitlePanel_TargetBanner").style.display = 'none'
 } catch(e) { }
 try { id("hook_Block_StickyBannerContainer").style.display = 'none'
 } catch(e) { }
 try {
     rmq("dialogWrapperBanner__inner")
     rmq("dialogWrapperBanner")
+    rmq('__gift')
 } catch(e) { }
 }, 1234)
