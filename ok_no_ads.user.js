@@ -31,6 +31,7 @@ try {
         ads[i].style.display = 'none'
     }
     id("bannerWithTitlePanel_TargetBanner").style.display = 'none'
+    id("hook_BannerNew_LeftColumnAdCustomInner").style.display = 'none'
 } catch(e) { }
 try { id("hook_Block_StickyBannerContainer").style.display = 'none'
 } catch(e) { }
@@ -38,5 +39,6 @@ try {
     rmq("dialogWrapperBanner__inner")
     rmq("dialogWrapperBanner")
     rmq('__gift')
+    rmq('mctc_link')
 } catch(e) { }
 }, 1234)
