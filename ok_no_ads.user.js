@@ -47,9 +47,10 @@ try {
     id("fthColWrp").style.display = 'none'
     id("hook_Block_HolidaysPortlet").style.display = 'none'
 
-    var i = 0, ads = document.querySelectorAll('a[target=_blank][class=feed-i_spec]')
+    var i, ads
 
-    if(ads.length) for(var i = 0; i < ads.length; ++i){
+    ads = document.querySelectorAll('a[target=_blank][class=feed-i_spec]')
+    if(ads.length) for(i = 0; i < ads.length; ++i){
         ads[i].style.display = 'none'
     }
     id("bannerWithTitlePanel_TargetBanner").style.display = 'none'
